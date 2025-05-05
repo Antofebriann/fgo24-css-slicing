@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zwallet Enter Pin</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 100vh;
+}
+
+.info-section {
+  flex: 1;
+  background-color: rgba(41, 72, 255, 1);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-section img {
+  max-width: 100%;
+
+}.info-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.users {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.desc {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.form-section h1 img {
+  width: auto; 
+  height: 1em; 
+  vertical-align: middle; 
+  margin-right: 0.5rem; 
+}
+
+.form-section {
+  flex: 1;
+  background: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.form-section h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(41, 72, 255, 1);
+  width: 82;
+  height: 27;
+
+}
+.form-section h1 p {
+  font-size: 2rem;
+}
+.form-section h2 {
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: none;
+  background-color: rgba(41, 72, 255, 1);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.login-link a {
+  color: rgba(41, 72, 255, 1);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .info-section,
+  .form-section {
+    flex: none;
+    width: 100%;
+  }
+
+  .form-section {
+    padding: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="info-section">
+      <img src="person.png" alt="person"/>
+    </div>
+    <div class="form-section">
+      <h1> <img src="wallet.png" alt="wallet">E-Wallet</h1>
+      <p class="users">Enter Your Pin 👋</p>
+      <p class="desc">
+        Please save your pin because this so important.
+      </p>
+      <form>
+        <input type="password"/>
+
+        <button type="submit">Submit</button>
+        <p class="login-link">Forgot Your Pin? <a href="#">Reset</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

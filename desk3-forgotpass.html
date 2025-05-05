@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forgot Password</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: #2563eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 40px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;      
+    }
+    .container div:first-child {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: rgba(41, 72, 255, 1);
+      width: 82;
+      height: 27;
+    }
+    .container .logo img {
+      width: auto; 
+      height: 1.3rem; 
+      vertical-align: middle; 
+      margin-right: 0.5rem;
+}
+    
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2563eb;
+      margin-bottom: 30px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .submit-btn {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo"><img src="wallet.png" alt="">E-Wallet</div>
+    <div class="title">Fill Out Form Correctly👋</div>
+    <div class="description">We will send new password to your email</div>
+
+    <form>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Your Email" required>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

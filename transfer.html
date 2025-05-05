@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transfer - Find People</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    body {
+      margin: 0;
+      background: #f1f5f9;
+      display: flex;
+    }
+    aside {
+      width: 240px;
+      background: white;
+      padding: 20px;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #2563eb;
+      margin-bottom: 40px;
+    }
+    nav a{
+      display: block;
+      color: #374151;
+      text-decoration: none;
+      margin: 15px 0;
+    }
+    nav a:hover{
+      color: #2563eb;
+    }
+    nav a.active{
+      color: #2563eb;
+      font-weight: bold;
+    }
+    nav a.logout {
+      color: #ef4444;
+      margin-top: 60px;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .steps {
+      margin-bottom: 30px;
+      color: #6b7280;
+    }
+    .steps span.active {
+      color: #2563eb;
+      font-weight: bold;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+    }
+
+    .result-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .result-box p {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .user-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .user-card {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      border: 1px solid #e5e7eb;
+      padding: 12px;
+      border-radius: 8px;
+      background: #f9fafb;
+    }
+    .user-avatar {
+      width: 48px;
+      height: 48px;
+      background: #d1d5db;
+      border-radius: 50%;
+    }
+    .user-info p {
+      margin: 2px 0;
+    }
+    .user-name {
+      font-weight: bold;
+    }
+    .user-phone {
+      font-size: 14px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <aside>
+    <div class="logo">E-Wallet</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#" class="active">Transfer</a>
+      <a href="#">History</a>
+      <a href="#">Top Up</a>
+      <a href="#">Profile</a>
+      <a href="#" class="logout">Keluar</a>
+    </nav>
+  </aside>
+
+  <main>
+    <div class="title">Transfer Money</div>
+    <div class="steps">
+      <span class="active">1 Find People</span> → 
+      <span>2 Set Nominal</span> → 
+      <span>3 Finish</span>
+    </div>
+
+    <input type="text" class="search-input" placeholder="Enter Number Or Full Name">
+
+    <div class="result-box">
+      <p>8 Result Found For Ghaluh</p>
+      <div class="user-grid">
+        <div class="user-card">
+          <div class="user-avatar"></div>
+          <div class="user-info">
+            <p class="user-name">Ghaluh 1</p>
+            <p class="user-phone">(239) 555-0108</p>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <div class="user-avatar"></div>
+          <div class="user-info">
+            <p class="user-name">Ghaluh 2</p>
+            <p class="user-phone">(480) 555-0103</p>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <div class="user-avatar"></div>
+          <div class="user-info">
+            <p class="user-name">Ghaluh 3</p>
+            <p class="user-phone">(225) 555-0118</p>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <div class="user-avatar"></div>
+          <div class="user-info">
+            <p class="user-name">Ghaluh 4</p>
+            <p class="user-phone">(406) 555-0120</p>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <div class="user-avatar"></div>
+          <div class="user-info">
+            <p class="user-name">Ghaluh 5</p>
+            <p class="user-phone">(303) 555-0105</p>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <div class="user-avatar"></div>
+          <div class="user-info">
+            <p class="user-name">Ghaluh 6</p>
+            <p class="user-phone">(808) 555-0111</p>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <div class="user-avatar"></div>
+          <div class="user-info">
+            <p class="user-name">Ghaluh 7</p>
+            <p class="user-phone">(671) 555-0110</p>
+          </div>
+        </div>
+
+        <div class="user-card">
+          <div class="user-avatar"></div>
+          <div class="user-info">
+            <p class="user-name">Ghaluh 8</p>
+            <p class="user-phone">(270) 555-0117</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
