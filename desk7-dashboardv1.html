@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard v1 Ghaluh Wizard</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+header h1{
+  color: rgba(41, 72, 255, 1);
+  font-size: 1.5rem;
+}
+header img {
+  height: 32px;
+}
+.header nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  background: white;
+  color: black;
+  padding: 20px;
+  width: 250px;
+}
+.sidebar nav a:hover{
+background-color: blue;
+padding: 10px;
+}
+.sidebar nav a {
+  display: block;
+  color: black;
+  margin: 10px 0;
+  text-decoration: none;
+}
+.main-content{
+  flex: 1;
+  padding: 20px;
+}
+.balance-section, .quick-actions, .income-expense, .transaction-history {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.quick-actions button {
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+.income-expense {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .income-expense {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo"> <img src="wallet.png" alt="">E-Wallet</h1>
+    <nav>
+      <p>Galuh Wizard</p>
+    </nav>
+  </header>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Transfer</a>
+        <a href="#">History</a>
+        <a href="#">Top Up</a>
+        <a href="#">Profile</a>
+        <a href="#">Keluar</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="balance-section">
+        <h3>Balance</h3>
+        <p>Rp.120.000</p>
+        <small>+2% 3 Days Ago</small>
+        <h3>Balance</h3>
+        <p>Rp.120.000</p>
+        <small>+2% 3 Days Ago</small>
+        <h3>Balance</h3>
+        <p>Rp.120.000</p>
+        <small>+2% 3 Days Ago</small>
+      </section>
+
+      <section class="quick-actions">
+        <button>Top Up</button>
+        <button>Transfer</button>
+      </section>
+
+      <section class="income-expense">
+        <div class="income">
+          <h4>Income</h4>
+          <p>Rp2.120.000</p>
+          <small>+11.01%</small>
+        </div>
+        <div class="expense">
+          <h4>Expense</h4>
+          <p>Rp.200.000</p>
+          <small>-5.06%</small>
+        </div>
+      </section>
+
+      <section class="transaction-history">
+        <h4>Transaction History</h4>
+        <ul>
+          <li><strong>Robert Fox</strong> — Transfer +Rp50.000</li>
+          <li><strong>Floyd Miles</strong> — Send -Rp50.000</li>
+          <li><strong>Robert Fox</strong> — Transfer +Rp50.000</li>
+          <li><strong>Floyd Miles</strong> — Send -Rp50.000</li>
+          <li><strong>Robert Fox</strong> — Transfer +Rp50.000</li>
+          <li><strong>Floyd Miles</strong> — Send -Rp50.000</li>      
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

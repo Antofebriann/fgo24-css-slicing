@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | E-Wallet</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+header h1{
+  color: blue;
+  font-size: 1.5rem;
+}
+header img{
+  height: 32px;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 220px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+.sidebar nav a {
+  display: block;
+  color: black;
+  margin: 10px 0;
+  text-decoration: none;
+}
+.sidebar nav a:hover{
+background-color: #3498db;
+}
+.sidebar nav a.active {
+  font-weight: bold;
+}
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+.balance-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.balance {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+.income-expense {
+  display: flex;
+  justify-content: space-between;
+}
+.green {
+  color: #2ecc71;
+}
+.red {
+  color: #e74c3c;
+}
+.fast-service, .transaction-history, .chart-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.fast-service .buttons {
+  margin-top: 10px;
+}
+.btn {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.transaction-history .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transactions {
+  list-style: none;
+  margin-top: 10px;
+}
+.transactions li {
+  padding: 5px 0;
+}
+.chart-placeholder {
+  background: #ecf0f1;
+  height: 150px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7f8c8d;
+}
+.chart-days {
+  text-align: center;
+  color: #555;
+  font-size: 0.9em;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1><img src="wallet.png" alt="">E-Wallet</h1>
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Transfer</a>
+        <a href="#">History</a>
+        <a href="#">Top Up</a>
+        <a href="#">Profile</a>
+        <a href="#">Keluar</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="balance-section">
+        <h3>Balance</h3>
+        <p class="balance">Rp.120.000</p>
+        <div class="income-expense">
+          <div>
+            <p>Income</p>
+            <p class="green">Rp.200.000 +2%</p>
+          </div>
+          <div>
+            <p>Expense</p>
+            <p class="red">Rp.100.000 +5%</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="fast-service">
+        <h3>Fast Service</h3>
+        <div class="buttons">
+          <button class="btn">Top Up</button>
+          <button class="btn">Transfer</button>
+        </div>
+      </section>
+
+      <section class="transaction-history">
+        <div class="header">
+          <h3>Transaction History</h3>
+          <a href="#">See All</a>
+        </div>
+        <ul class="transactions">
+          <li>Robert Fox - <span class="green">+Rp50.000</span></li>
+          <li>Floyd Miles - <span class="red">-Rp50.000</span></li>
+          <li>Ujang - <span class="red">-Rp50.000</span></li>
+        </ul>
+      </section>
+
+      <section class="chart-section">
+        <h3>Financial Chart</h3>
+        <div class="chart-placeholder">[ Chart Placeholder ]</div>
+        <p class="chart-days">Sat Sun Mon Tue Wed Thu Fri</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

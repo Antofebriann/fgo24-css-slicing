@@ -26,7 +26,14 @@
         padding: 20px 60px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       }  
+      header h1{
+        color: white;
+        font-size: 1.5rem;
+      }
       header img {
+        height: 32px;
+      }
+      footer img{
         height: 32px;
       }
   
@@ -167,8 +174,7 @@
   
       .newsletter button:hover {
         background-color: wheat;
-      }
-  
+      }  
       @media (max-width: 768px) {
         header {
           flex-direction: column;
@@ -203,7 +209,7 @@
 <body>
 
   <header>
-    <img src="wallet.png" alt="Zwallet Logo">
+    <h1 class="logo"> <img src="wallet.png" alt="">E-Wallet</h1>
     <nav>
       <a href="#">Sign In</a>
       <a href="#">Sign Up</a>
@@ -262,16 +268,16 @@
   <footer class="footer">
     <div class="footer-content">
       <div>
-        <h5>E-Wallet</h5>
+        <h5><img src="wallet.png" alt=""> E-Wallet</h5>
         <p>Clarity gives you the blocks and components you need to create a truly professional website.</p>
       </div>
       <div>
         <h5>Contact</h5>
-        <p>contact@zwallet.com<br>+62 5637 8882 9901</p>
+        <p>+62 5637 8882 9901<br>contact@zwallet.com</p>
       </div>
       <div>
         <h5>Social Media</h5>
-        <p>contact@zwallet.com<br>+62 5637 8882 9901</p>
+        <p>twitter<br>facebook<br>instagram<br>Github</p>
       </div>
       <div>
         <h5>Newsletter</h5>

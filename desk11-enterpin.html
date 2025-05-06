@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transfer - Enter Pin | E-Wallet Ghaluh Wizard</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 220px;
+  background: blue;
+  color: white;
+  padding: 20px;
+}
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+.sidebar nav a {
+  color: white;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+}
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+.steps {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+.recipient-info {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.recipient-info .verified {
+  color: green;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.transfer-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.transfer-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.submit {
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.pin-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+.pin-input {
+  width: 100%;
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.next {
+  background: #27ae60;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.forgot {
+  text-align: center;
+  margin-top: 10px;
+}
+.forgot a {
+  color: #3498db;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>E-Wallet</h2>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Transfer</a>
+        <a href="#">History</a>
+        <a href="#">Top Up</a>
+        <a href="#">Profile</a>
+        <a href="#">Keluar</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Transfer Money</h1>
+      <div class="steps">1 Find People → 2 Set Nominal → 3 Finish</div>
+
+      <section class="recipient-info">
+        <h3>TRANSFER TO GHALUH 1</h3>
+        <p>Phone: (239) 555-0108 <span class="verified">Verified</span></p>
+      </section>
+
+      <section class="transfer-form">
+        <label>Enter Nominal Transfer</label>
+        <input type="number" placeholder="Amount" />
+
+        <label>Enter Some Notes</label>
+        <input type="text" placeholder="e.g. Payment for coffee" />
+
+        <button class="submit">Submit & Transfer</button>
+      </section>
+
+      <section class="pin-section">
+        <h2>Enter Your Pin</h2>
+        <p>Enter Your Pin For Transaction</p>
+        <input type="password" maxlength="6" class="pin-input" />
+
+        <button class="next">Next</button>
+        <p class="forgot"><a href="#">Forgot Your Pin? Reset</a></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Profile - E-Wallet Ghaluh Wizard</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  background: blue;
+  color: white;
+  padding: 20px;
+  width: 220px;
+}
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+.sidebar nav a {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.profile-image {
+  max-width: 250px;
+}
+.profile-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.image-actions {
+  margin-top: 10px;
+}
+.image-actions button {
+  margin-right: 10px;
+}
+.image-actions .delete {
+  background: #e74c3c;
+  color: white;
+}
+.profile-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.profile-form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.profile-form button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.submit {
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .profile-section {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>E-Wallet</h2>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Transfer</a>
+        <a href="#">History</a>
+        <a href="#">Top Up</a>
+        <a href="#">Profile</a>
+        <a href="#">Keluar</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Profile</h1>
+      <div class="profile-section">
+        <div class="profile-image">
+          <img src="profile-placeholder.png" alt="Profile Picture" />
+          <p>The profile picture must be 512 x 512 pixels or less</p>
+          <div class="image-actions">
+            <button>Change Profile</button>
+            <button class="delete">Delete Profile</button>
+          </div>
+        </div>
+
+        <form class="profile-form">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Full Name" />
+
+          <label>Phone</label>
+          <input type="tel" placeholder="Enter Your Number Phone" />
+
+          <label>Email</label>
+          <input type="email" placeholder="Enter Your Email" />
+
+          <label>Password</label>
+          <button type="button">Change Password</button>
+
+          <label>Pin</label>
+          <button type="button">Change Pin</button>
+
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

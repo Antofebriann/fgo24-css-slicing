@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Change Password</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.sidebar {
+  background: blue;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  padding: 40px;
+  flex: 1;
+}
+
+.change-password-form {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.change-password-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.change-password-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.change-password-form button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.change-password-form button:hover {
+  background: #1e40af;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Transfer</a></li>
+      <li><a href="#">History</a></li>
+      <li><a href="#">Top Up</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Keluar</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <h1>Change Password</h1>
+    <form class="change-password-form">
+      <label>
+        Existing Password
+        <input type="password" placeholder="Enter Your Existing Password" required />
+      </label>
+
+      <label>
+        New Password
+        <input type="password" placeholder="Enter Your New Password" required />
+      </label>
+
+      <label>
+        Confirm New Password
+        <input type="password" placeholder="Re-Type Your New Password" required />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

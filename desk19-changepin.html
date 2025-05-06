@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Change PIN</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background: #f4f4f4;
+}
+
+.sidebar {
+  background-color: blue;
+  color: white;
+  width: 200px;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+}
+
+.note {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.change-pin-form {
+  max-width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.change-pin-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.change-pin-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.change-pin-form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.change-pin-form button:hover {
+  background-color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Transfer</a></li>
+      <li><a href="#">History</a></li>
+      <li><a href="#">Top Up</a></li>
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Keluar</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <h1>Change PIN</h1>
+    <p class="note">Please save your PIN because this is very important.</p>
+
+    <form class="change-pin-form">
+      <label>
+        New PIN
+        <input type="password" maxlength="6" placeholder="Enter new 6-digit PIN" required />
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transfer Failed | E-Wallet</title>
+  <style>
+    .button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.try-again {
+  background-color: #e74c3c;
+  color: white;
+}
+.back-dashboard {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+.receiver-info {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+.receiver-info h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.receiver-info .fail-message {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>E-Wallet</h2>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#" class="active">Transfer</a>
+        <a href="#">History</a>
+        <a href="#">Top Up</a>
+        <a href="#">Profile</a>
+        <a href="#">Keluar</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1>Transfer Money</h1>
+      <p class="step-info">1 Find People &gt; 2 Set Nominal &gt; <strong>3 Finish</strong></p>
+
+      <section class="receiver-info">
+        <h3>Transfer to Ghaluh 1</h3>
+        <p><strong>Oops! Transfer Failed</strong></p>
+        <p class="fail-message">Sorry, there is an issue with your transfer. Try again later!</p>
+      </section>
+
+      <div class="button-group">
+        <button class="btn try-again">Try Again</button>
+        <button class="btn back-dashboard">Back to Dashboard</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
